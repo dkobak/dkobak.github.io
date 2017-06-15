@@ -9,4 +9,6 @@ Not a test paragraph.
 
 Not the second paragraph.
 
-$x\cdot x \ne x^2$
+$$x\cdot x \ne x^2$$
+
+And inline $$xyz$$ too.
