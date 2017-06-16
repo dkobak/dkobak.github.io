@@ -87,7 +87,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -105,7 +105,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -134,7 +134,7 @@ plt.title('PCA after imputation');
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -182,7 +182,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -207,7 +207,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -236,7 +236,7 @@ plt.tight_layout(rect=[0, 0.05, 1, 0.95])
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -291,7 +291,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -312,7 +312,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -344,7 +344,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -371,7 +371,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -403,7 +403,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -426,7 +426,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -453,7 +453,7 @@ plt.tight_layout(rect=[0, 0.05, 1, 0.95])
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -512,7 +512,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -533,7 +533,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -554,7 +554,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -575,7 +575,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -598,7 +598,7 @@ plt.tight_layout()
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -625,7 +625,7 @@ plt.tight_layout(rect=[0, 0.05, 1, 0.95])
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
