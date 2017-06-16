@@ -26,23 +26,11 @@ The paper's claim is that CIDR's visualization is substantially better than othe
 
 ## Details
 
-Here is a brief description of how CIDR works. First, for each of the $n$ cells it finds a threshold $d$ such that if log gene expression is below $d$ then it's a _dropout candidate_. This is done for each cell separately by looking at the histogram of log gene expression over all genes. In all cases discussed in the paper resulting thresholds for all cells are very similar and almost nothing changes if one uses fixed $d$, so for simplicity I will consider $d$ fixed. The typical values of $d$ are from 1 to 3 for `log(rpkm+1)`.
+Here is a brief description of how CIDR works. First, for each of the $$n$$ cells it finds a threshold $$d$$ such that if log gene expression is below $$d$$ then it's a _dropout candidate_. This is done for each cell separately by looking at the histogram of log gene expression over all genes. In all cases discussed in the paper resulting thresholds for all cells are very similar and almost nothing changes if one uses fixed $$d$$, so for simplicity I will consider $$d$$ fixed. The typical values of $$d$$ are from 1 to 3 for `log(rpkm+1)`.
 
-Now for each of the $p$ genes we can compute dropout rate (fraction of cells with expression below $d$) and mean expression level (over cells with expression above $d$). It's well-known that, across genes, there is a negative relation between them: the higher the mean expression level, the lower the dropout rate. CIDR fits logistic function to these estimates and sets another threshold $w$ to where this function drops below 1/2, corresponding to dropout probability being below 50%. Typical value of $w$ is around 8.
+Now for each of the $$p$$ genes we can compute dropout rate (fraction of cells with expression below $$d$$) and mean expression level (over cells with expression above $$d$$). It's well-known that, across genes, there is a negative relation between them: the higher the mean expression level, the lower the dropout rate. CIDR fits logistic function to these estimates and sets another threshold $$w$$ to where this function drops below 1/2, corresponding to dropout probability being below 50%. Typical value of $$w$$ is around 8.
 
-Now comes the algorithm for computing the dissimilarity matrix $D$:
-
-{% highlight python linenos %}
-n = X.shape[0]
-D = np.zeros((n, n))
-for i in range(n):
-	for j in range(i,n):
-		a = X[i,:]
-		b = X[j,:]
-		ind = ((a>d) & (b>d)) | (np.maximum(a,b)>w)
-		D[i,j] = np.sqrt(np.sum((a[ind]-b[ind])**2))
-D = D + D.transpose()
-{% endhighlight %}
+Now comes the algorithm for computing the dissimilarity matrix $$D$$:
 
 ```python
 n = X.shape[0]
@@ -55,20 +43,7 @@ for i in range(n):
 		D[i,j] = np.sqrt(np.sum((a[ind]-b[ind])**2))
 D = D + D.transpose()
 ```
-
-```python linenos
-n = X.shape[0]
-D = np.zeros((n, n))
-for i in range(n):
-	for j in range(i,n):
-		a = X[i,:]
-		b = X[j,:]
-		ind = ((a>d) & (b>d)) | (np.maximum(a,b)>w)
-		D[i,j] = np.sqrt(np.sum((a[ind]-b[ind])**2))
-D = D + D.transpose()
-```
-
-This simply computes Euclidean distance between all pairs of cells,  but does it over a subset
+This simply computes Euclidean distance between all pairs of cells,  but for each pair does it over a subset of genes (look for the `ind=` line): only those genes are taken where either (i) both cells are _not_ dropout candidates, or (ii) one is droupout candidate with expression below $$d$$ and another has high expression above $$w$$. The motivation for this is not very clear. What 
 
 
 TBC
