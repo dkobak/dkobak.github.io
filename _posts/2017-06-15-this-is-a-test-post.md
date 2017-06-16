@@ -24,6 +24,16 @@ The paper's claim is that CIDR's visualization is substantially better than othe
 
 <!--break-->
 
+## Summary figures
+
+Here are summary figures for all three datasets. Explanations below.
+
+<img src="/img/cidr/toy.png">
+
+<img src="/img/cidr/darmanis.png">
+
+<img src="/img/cidr/li.png">
+
 ## Details
 
 Here is a brief description of how CIDR works. First, for each of the $$n$$ cells it finds a threshold $$d$$ such that if log gene expression is below $$d$$ then it's a _dropout candidate_. This is done for each cell separately by looking at the histogram of log gene expression over all genes. In all cases discussed in the paper resulting thresholds for all cells are very similar and almost nothing changes if one uses fixed $$d$$, so for simplicity I will consider $$d$$ fixed. The typical values of $$d$$ are from 1 to 3 for `log(rpkm+1)`.
