@@ -16,7 +16,12 @@
 
     <div class="wrapper">
       <header>
-        <h1>[{{ site.title | default: site.github.repository_name }}](/)</h1>
+        {% if page.url == "/" %}
+           <h1>{{ site.title | default: site.github.repository_name }}]</h1>
+        {% else %}
+           <h1><a href="/">{{ site.title | default: site.github.repository_name }}]</a></h1>
+        {% endif %}
+        
         <img src="/kobak_sm_round.jpg" alt="dmitry kobak photo" width=150 height=150 style="margin-left:20px">
         <p>Postdoc in <a href="www.berenslab.org">Berens lab</a> in Tübingen University</p>
         
