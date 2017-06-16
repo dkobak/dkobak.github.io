@@ -11,5 +11,6 @@
 <hr>
 
   {% for post in site.posts %}
+      <p>Boo</p>
       {{ post.excerpt }}
   {% endfor %}
