@@ -1,14 +1,6 @@
-## Nothing
-
-Nothing here yet.
-
-<hr>
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+    {{ post.excerpt }}
+    {% if post.excerpt != post.content %}
+    <a href="{{ site.baseurl }}{{ post.url }}" style="font-weight:bold">Read more</a>
+    <hr>
+{% endif %}
