@@ -7,7 +7,7 @@ excerpt_separator: <!--break-->
 
 # Not a test title
 
-<p style="color:grey; margin-top:-.5em; font-face:bold">15 June 2017</p>
+<p style="color:grey; margin-top:-.5em; font-weight:bold">15 June 2017</p>
 
 Not a test paragraph.
 
