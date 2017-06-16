@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 date:   2017-06-15 09:00:00
 title:  "This is not a test"
 excerpt_separator: <!--break-->
