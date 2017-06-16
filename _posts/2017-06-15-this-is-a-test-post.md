@@ -44,6 +44,30 @@ for i in range(n):
 D = D + D.transpose()
 {% endhighlight %}
 
+```python
+n = X.shape[0]
+D = np.zeros((n, n))
+for i in range(n):
+	for j in range(i,n):
+		a = X[i,:]
+		b = X[j,:]
+		ind = ((a>d) & (b>d)) | (np.maximum(a,b)>w)
+		D[i,j] = np.sqrt(np.sum((a[ind]-b[ind])**2))
+D = D + D.transpose()
+```
+
+```python linenos
+n = X.shape[0]
+D = np.zeros((n, n))
+for i in range(n):
+	for j in range(i,n):
+		a = X[i,:]
+		b = X[j,:]
+		ind = ((a>d) & (b>d)) | (np.maximum(a,b)>w)
+		D[i,j] = np.sqrt(np.sum((a[ind]-b[ind])**2))
+D = D + D.transpose()
+```
+
 This simply computes Euclidean distance between all pairs of cells,  but does it over a subset
 
 
