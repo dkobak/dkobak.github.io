@@ -11,7 +11,8 @@ excerpt_separator: <!--break-->
 
 _Genome Biology_ published [CIDR: Ultrafast and accurate clustering through imputation for single-cell RNA-seq data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1188-0#Bib1) by Li et al. I am very interested in clustering and imputation of the scRNA-seq data, so I decided to take a look. 
 
-Given cell expression data matrix $X$ of $n\times p$ size with $n$ cells and $p$ genes, CIDR first finds dropout candidates, then constructs a $n\times n$ dissimilarity matrix $D$ taking dropouts into account, then performs PCA using $D$. They use standard hierarchical clustering on the top PCs, so I will not be talking about clustering here; instead, I will focus on the PCA part.
+
+Given cell expression data matrix $$X$$ of $$n\times p$$ size with $$n$$ cells and $$p$$ genes, CIDR first finds dropout candidates, then constructs a $$n\times n$$ dissimilarity matrix $$D$$ taking dropouts into account, then performs PCA using $$D$$. They use standard hierarchical clustering on the top PCs, so I will not be talking about clustering here; instead, I will focus on the PCA part.
 
 The paper's claim is that CIDR's visualization is substantially better than other existing methods: they compare it to standard PCA, t-SNE, ZIFA, etc. The claim rests on three datasets: (a) toy dataset; (b) human brain dataset of Darmanis et al. PNAS 2015; (c) pancreas dataset of Li et al. EMBO Rep. 2016. I will show that in _each_ of these three datasets CIDR performs much worse than other methods.
 
@@ -19,7 +20,7 @@ The paper's claim is that CIDR's visualization is substantially better than othe
 
 2. For the Darmanis et al. data, standard t-SNE works very well and much better than CIDR. The authors present what they call t-SNE results, but I cannot reproduce it; when I run t-SNE, I get excellent results. The authors must have either used some problematic implementation or chosen very misleading hyper-parameters such as perplexity (details are unfortunately not provided).
 
-3. For the Li et al. dataset, CIDR does outperform PCA and in some respects performs better than t-SNE. However, the real reason for this is never discussed in the CIDR paper. It turns out, that CIDR is nearly equivalent to thresholding $X$ and then performing standard PCA; I show that this yields nearly the same results, and moreover, t-SNE on the thresholded $X$ performs dramatically better than CIDR.
+3. For the Li et al. dataset, CIDR does outperform PCA and in some respects performs better than t-SNE. However, the real reason for this is never discussed in the CIDR paper. It turns out, that CIDR is nearly equivalent to thresholding $$X$$ and then performing standard PCA; I show that this yields nearly the same results, and moreover, t-SNE on the thresholded $$X$$ performs dramatically better than CIDR.
 
 <!--break-->
 
