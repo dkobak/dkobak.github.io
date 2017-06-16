@@ -12,7 +12,7 @@ excerpt_separator: <!--break-->
 _Genome Biology_ published [CIDR: Ultrafast and accurate clustering through imputation for single-cell RNA-seq data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1188-0) by Li et al. I am very interested in clustering and imputation of the scRNA-seq data, so I decided to take a look. 
 
 
-Given cell expression data matrix $$X$$ of $$n\times p$$ size with $$n$$ cells and $$p$$ genes, CIDR first finds dropout candidates, then constructs a $$n\times n$$ dissimilarity matrix $$D$$ taking dropouts into account, then performs PCA using $$D$$. They use standard hierarchical clustering on the top PCs, so I will not be talking about clustering here; instead, I will focus on the PCA part.
+Given cell expression data matrix $$X$$ of $$n\times p$$ size with $$n$$ cells and $$p$$ genes, CIDR first finds dropout candidates, then constructs a $$n\times n$$ distance matrix $$D$$ taking dropouts into account, then [performs PCA](https://stats.stackexchange.com/a/132731) using $$D$$. They use standard hierarchical clustering on the top PCs, so I will not be talking about clustering here; instead, I will focus on the PCA part.
 
 The paper's claim is that CIDR's visualization is substantially better than other existing methods: they compare it to standard PCA, t-SNE, ZIFA, etc. The claim rests on three datasets: (a) toy dataset; (b) human brain dataset of Darmanis et al. PNAS 2015; (c) pancreas dataset of Li et al. EMBO Rep. 2016. I will show that in _each_ of these three datasets CIDR performs much worse than other methods.
 
@@ -24,17 +24,7 @@ The paper's claim is that CIDR's visualization is substantially better than othe
 
 <!--break-->
 
-## Summary figures
-
-Here are summary figures for all three datasets. Explanations below.
-
-![Toy dataset](/img/cidr/toy.png)
-
-![Darmanis dataset](/img/cidr/darmanis.png)
-
-![Pancreas dataset](/img/cidr/li.png)
-
-## Details
+## Details of the CIDR method
 
 Here is a brief description of how CIDR works. First, for each of the $$n$$ cells it finds a threshold $$d$$ such that if log gene expression is below $$d$$ then it's a _dropout candidate_. This is done for each cell separately by looking at the histogram of log gene expression over all genes. In all cases discussed in the paper resulting thresholds for all cells are very similar and almost nothing changes if one uses fixed $$d$$, so for simplicity I will consider $$d$$ fixed. The typical values of $$d$$ are from 1 to 3 for `log(rpkm+1)`.
 
@@ -57,6 +47,8 @@ This simply computes Euclidean distances between all pairs of cells, but for eac
 
 The interesting thing is that the genes selected by the `((a>d) & (b>d))` mask tend to contribute substantially more to the sum of squares than the genes selected by the `(np.maximum(a,b)>w)` mask. But it's the latter genes that make all the difference. Using only the latter genes tends to yield larger PCA eigenvalues (despite smaller distances in $$D$$) than using only the former genes, and I could get results very similar to CIDR by using `(np.maximum(a,b)>w)` mask on its own. This, in turn, is very similar to replacing all entries in $$X$$ that are below $$w$$ by zeros and then doing standard PCA; I call it _thresholding_. I tried it on all three datasets, and the results are always very similar to CIDR (and often somewhat better). None of that is discussed in the paper.
 
+## Datasets
+
 Now we can consider the datasets. In the toy dataset we see CIDR performing better than PCA and thresholding+PCA producing similar (even slightly better) results. At the same time, in this toy dataset the difference between dropouts and non-dropouts is so strong that the most naive imputation method (replacing all dropout candidates with column means over remaining values) followed by PCA yields markedly better results.
 
 ![Toy dataset](/img/cidr/toy.png)
@@ -71,7 +63,7 @@ Finally, in the pancreas dataset CIDR is able to separate two clusters from the 
 
 To conclude:
 
- * The CIDR paper uses an inappropriate toy dataset where naive imputation works the best;
+ * The CIDR paper uses an inappropriate toy dataset where naive imputation works the best (unlike real data);
  * The CIDR paper shows very misleading t-SNE figures;
  * The CIDR method itself is substantially worse than alternatives in all cases;
  * Thresholding appears to be an interesting trick that can bring out some structure in very low $$n$$ situation. It is worth investigating further.
