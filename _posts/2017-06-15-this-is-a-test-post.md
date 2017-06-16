@@ -1,9 +1,12 @@
 ---
 layout: default
+date:   2017-06-15 09:00:00
 title:  "This is not a test"
 ---
 
 # Not a test title
+
+<p style="color:grey; margin-top:-.5em; font-face:bold">15 June 2017</p>
 
 Not a test paragraph.
 
