@@ -1,7 +1,7 @@
 ---
 layout: post
 date:   2017-06-15 09:00:00
-title:  "This is not a test"
+title:  "Critical review of the CIDR paper"
 excerpt_separator: <!--break-->
 ---
 
