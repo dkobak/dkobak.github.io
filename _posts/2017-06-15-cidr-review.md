@@ -87,6 +87,7 @@ To conclude:
 import numpy as np
 import pylab as plt
 import seaborn as sns
+import matplotlib
 
 # this makes all figure backgrounds white, also when exporting as png
 matplotlib.rcParams.update({'nbagg.transparent': False, 'figure.facecolor': 'white'})
