@@ -18,7 +18,7 @@ The paper's claim is that CIDR's visualization is substantially better than othe
 
 1. For their own toy dataset, naive imputation yields much better results than CIDR. This is particularly striking, given that the authors constructed this toy dataset themselves.
 
-2. For the Darmanis et al. data, standard t-SNE works very well and much better than CIDR. The authors present what they call t-SNE results, but I cannot reproduce it; when I run t-SNE, I get excellent results. The authors must have either used some problematic implementation or chosen very misleading hyper-parameters such as perplexity (details are unfortunately not provided).
+2. For the Darmanis et al. data, standard t-SNE works very well and much better than CIDR. The authors claim that t-SNE fails, but this is based on a mistake in their `tsne()` call.
 
 3. For the Li et al. dataset, CIDR does outperform PCA and in some respects performs better than t-SNE. However, the real reason for this is never discussed in the CIDR paper. It turns out, that CIDR is nearly equivalent to thresholding $$X$$ and then performing standard PCA; I show that this yields nearly the same results, and moreover, t-SNE on the thresholded $$X$$ performs dramatically better than CIDR.
 
@@ -53,7 +53,16 @@ Now we can consider the datasets. In the toy dataset we see CIDR performing bett
 
 ![Toy dataset](/img/cidr/toy.png)
 
-In the Darmanis dataset CIDR performs somewhat better than PCA, and again we see that thresholding+PCA yields very similar results. At the same time, vanilla t-SNE yields excellent separation between clusters, which is very different from what the authors report in the paper. Something must have been wrong in their t-SNE implementation or usage.
+In the Darmanis dataset CIDR performs somewhat better than PCA, and again we see that thresholding+PCA yields very similar results. At the same time, vanilla t-SNE yields excellent separation between clusters, which is very different from what the authors report in the paper. Indeed, they call `tsne()` incorrectly in line 149 of https://github.com/VCCRI/CIDR-comparisons/blob/master/Brain/brain.R:
+
+```r
+y_tsne2 <- tsne(dist(t(brain10_lcpm)), k=nPCs, perplexity=10)
+```
+should be
+```r
+y_tsne2 <- tsne(pca$x[,c(1:nPCs)], perplexity=10)
+```
+(and would work even better when using `nPCs=10` instead of `nPCs=4`). Parameter `k` with default value `k=2` controls the output dimensionality, not the PCA preprocessing dimensionality. 
 
 ![Darmanis dataset](/img/cidr/darmanis.png)
 
