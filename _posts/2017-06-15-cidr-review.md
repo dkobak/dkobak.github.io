@@ -53,14 +53,14 @@ Now we can consider the datasets. In the toy dataset we see CIDR performing bett
 
 ![Toy dataset](/img/cidr/toy.png)
 
-In the Darmanis dataset CIDR performs somewhat better than PCA, and again we see that thresholding+PCA yields very similar results. At the same time, vanilla t-SNE yields excellent separation between clusters, which is very different from what the authors report in the paper. Indeed, they call `tsne()` incorrectly in line 149 of https://github.com/VCCRI/CIDR-comparisons/blob/master/Brain/brain.R:
+In the Darmanis dataset CIDR performs somewhat better than PCA, and again we see that thresholding+PCA yields very similar results. At the same time, vanilla t-SNE yields excellent separation between clusters, which is very different from what the authors report in the paper. Indeed, they call `tsne()` incorrectly in line 149 of [https://github.com/VCCRI/CIDR-comparisons/blob/master/Brain/brain.R](https://github.com/VCCRI/CIDR-comparisons/blob/master/Brain/brain.R):
 
 ```r
 y_tsne2 <- tsne(dist(t(brain10_lcpm)), k=nPCs, perplexity=10)
 ```
 should be
 ```r
-y_tsne2 <- tsne(pca$x[,c(1:nPCs)], perplexity=10)
+y_tsne2 <- tsne(prcomp(t(brain10_lcpm))$x[,c(1:nPCs)], perplexity=10)
 ```
 (and would work even better when using `nPCs=10` instead of `nPCs=4`). Parameter `k` with default value `k=2` controls the output dimensionality, not the PCA preprocessing dimensionality. 
 
@@ -73,7 +73,7 @@ Finally, in the pancreas dataset CIDR is able to separate two clusters from the 
 To conclude:
 
  * The CIDR paper uses an inappropriate toy dataset where naive imputation works the best (unlike real data);
- * The CIDR paper shows very misleading t-SNE figures;
+ * The CIDR paper uses t-SNE incorrectly;
  * The CIDR method itself is substantially worse than alternatives in all cases;
  * Thresholding appears to be an interesting trick that can bring out some structure in very low $$n$$ situation. It is worth investigating further.
 
