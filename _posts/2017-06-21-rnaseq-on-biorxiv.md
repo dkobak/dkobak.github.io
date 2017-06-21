@@ -6,7 +6,7 @@ excerpt_separator: <!--break-->
 draft: true
 ---
 
-# Single cell RNA-seq papers on biorxiv, Jan$\ndash;$Jun 2017
+# Single cell RNA-seq papers on biorxiv, Jan&ndash;Jun 2017
 
 A robust statistical framework to detect multiple sources of hidden variation in single-cell transcriptomes
 http://biorxiv.org/content/early/2017/06/18/151217
