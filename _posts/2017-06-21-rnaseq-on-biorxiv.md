@@ -8,8 +8,7 @@ draft: true
 
 # Single cell RNA-seq papers on biorxiv, Jan&ndash;Jun 2017
 
-http://biorxiv.org/collection/bioinformatics
-60 pages * 10
+http://biorxiv.org/collection/bioinformatics 60 pages * 10
 
 * A robust statistical framework to detect multiple sources of hidden variation in single-cell transcriptomes  
   <http://biorxiv.org/content/early/2017/06/18/151217>
