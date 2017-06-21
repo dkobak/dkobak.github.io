@@ -16,7 +16,7 @@ http://biorxiv.org/collection/bioinformatics 60 pages * 10
 * Biological classification with RNA-Seq data: Can alternative splicing enhance machine learning classifier?  
   <http://biorxiv.org/content/early/2017/06/18/146340>
 
-* Addressing the looming identity crisis in single cell RNA-seq  
+* Addressing the looming identity crisis in single cell RNA-seq    
   <http://biorxiv.org/content/early/2017/06/16/150524>
 
 * scmap - A tool for unsupervised projection of single cell RNA-seq data  
