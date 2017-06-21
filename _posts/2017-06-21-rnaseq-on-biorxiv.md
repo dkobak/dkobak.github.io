@@ -12,6 +12,8 @@ I looked through all 2017 preprints in <http://biorxiv.org/collection/bioinforma
 
 Below is the list of all papers related to the analysis of scRNA-seq data. I plan to provide short comments on some of them later, or perhaps group them by topics.
 
+<!--break-->
+
 * A robust statistical framework to detect multiple sources of hidden variation in single-cell transcriptomes \\
   <http://biorxiv.org/content/early/2017/06/18/151217>
 
