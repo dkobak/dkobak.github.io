@@ -10,112 +10,112 @@ draft: true
 
 I looked through all 2017 preprints in <http://biorxiv.org/collection/bioinformatics>, that's 60 pages with 10 papers per page, i.e. around 600 papers in half a year. In comparison, <arxiv.org> has only around 60 papers in 2017 in q-bio.GN (it does not separate bioinformatics and genomices; biorxiv has further around 400 papers in genomics section). Below is the list of all papers related to the analysis of scRNA-seq data. I plan to provide short comments on some of them later, or perhaps group them by topics.
 
-1. A robust statistical framework to detect multiple sources of hidden variation in single-cell transcriptomes \\
+* A robust statistical framework to detect multiple sources of hidden variation in single-cell transcriptomes \\
   <http://biorxiv.org/content/early/2017/06/18/151217>
 
-1. Biological classification with RNA-Seq data: Can alternative splicing enhance machine learning classifier? \\
+* Biological classification with RNA-Seq data: Can alternative splicing enhance machine learning classifier? \\
   <http://biorxiv.org/content/early/2017/06/18/146340>
 
-1. Addressing the looming identity crisis in single cell RNA-seq \\
+* Addressing the looming identity crisis in single cell RNA-seq \\
   <http://biorxiv.org/content/early/2017/06/16/150524>
 
-1. scmap - A tool for unsupervised projection of single cell RNA-seq data \\
+* scmap - A tool for unsupervised projection of single cell RNA-seq data \\
   <http://biorxiv.org/content/early/2017/06/15/150292>
 
-1. Exhaustive capture of biological variation in RNA-seq data through k-mer decomposition \\
+* Exhaustive capture of biological variation in RNA-seq data through k-mer decomposition \\
   <http://biorxiv.org/content/early/2017/06/02/122937>
 
-1. Single-Cell Transcriptomic Analysis Of CA1 Inhibitory Neurons \\
+* Single-Cell Transcriptomic Analysis Of CA1 Inhibitory Neurons \\
   <http://biorxiv.org/content/early/2017/05/29/143354>
 
-1. Bias, Robustness And Scalability In Differential Expression Analysis Of Single-Cell RNA-Seq Data \\
+* Bias, Robustness And Scalability In Differential Expression Analysis Of Single-Cell RNA-Seq Data \\
   <http://biorxiv.org/content/early/2017/05/28/143289>
 
-1. Modelling dropouts for feature selection in scRNASeq experiments \\
+* Modelling dropouts for feature selection in scRNASeq experiments \\
   <http://biorxiv.org/content/early/2017/05/25/065094>
 
-1. Prior Knowledge And Sampling Model Informed Learning With Single Cell RNA-Seq Data \\
+* Prior Knowledge And Sampling Model Informed Learning With Single Cell RNA-Seq Data \\
   <http://biorxiv.org/content/early/2017/05/25/142398>
 
-1. A method to assess significant differences in RNA expression among specific gene groups \\
+* A method to assess significant differences in RNA expression among specific gene groups \\
   <http://biorxiv.org/content/early/2017/05/25/136143>
 
-1. scImpute: Accurate And Robust Imputation For Single Cell RNA-Seq Data \\
+* scImpute: Accurate And Robust Imputation For Single Cell RNA-Seq Data \\
   <http://biorxiv.org/content/early/2017/05/24/141598>
 
-1. Splatter: Simulation Of Single-Cell RNA Sequencing Data \\
+* Splatter: Simulation Of Single-Cell RNA Sequencing Data \\
   <http://biorxiv.org/content/early/2017/05/02/133173>
 
-1. Estimation of immune cell content in tumour tissue using single-cell RNA-seq data \\
+* Estimation of immune cell content in tumour tissue using single-cell RNA-seq data \\
   <http://biorxiv.org/content/early/2017/04/21/127001>
 
-1. RNA-Seq 2G: Online Analysis Of Differential Gene Expression With Comprehensive Options Of Statistical Methods \\
+* RNA-Seq 2G: Online Analysis Of Differential Gene Expression With Comprehensive Options Of Statistical Methods \\
   <http://biorxiv.org/content/early/2017/04/07/122747>
 
-1. ZINB-WaVE: A general and flexible method for signal extraction from single-cell RNA-seq data \\  
+* ZINB-WaVE: A general and flexible method for signal extraction from single-cell RNA-seq data \\  
   <http://biorxiv.org/content/early/2017/04/06/125112>
 
-1. CellView: Interactive Exploration Of High Dimensional Single Cell RNA-Seq Data \\
+* CellView: Interactive Exploration Of High Dimensional Single Cell RNA-Seq Data \\
   <http://biorxiv.org/content/early/2017/04/04/123810>
 
-1. PHATE: A Dimensionality Reduction Method for Visualizing Trajectory Structures in High-Dimensional Biological Data \\
+* PHATE: A Dimensionality Reduction Method for Visualizing Trajectory Structures in High-Dimensional Biological Data \\
   <http://biorxiv.org/content/early/2017/03/24/120378>
 
-1. Granatum: a graphical single-cell RNA-seq analysis pipeline for genomics scientists \\
+* Granatum: a graphical single-cell RNA-seq analysis pipeline for genomics scientists \\
   <http://biorxiv.org/content/early/2017/03/23/110759>
 
-1. Assessing The Reliability Of Spike-In Normalization For Analyses Of Single-Cell RNA Sequencing Data \\
+* Assessing The Reliability Of Spike-In Normalization For Analyses Of Single-Cell RNA Sequencing Data \\
   <http://biorxiv.org/content/early/2017/03/23/119784>
 
-1. Gene Length And Detection Bias In Single Cell RNA Sequencing Protocols \\
+* Gene Length And Detection Bias In Single Cell RNA Sequencing Protocols \\
   <http://biorxiv.org/content/early/2017/03/22/119222>
 
-1. SPRING: a kinetic interface for visualizing high dimensional single-cell expression data \\
+* SPRING: a kinetic interface for visualizing high dimensional single-cell expression data \\
   <http://biorxiv.org/content/early/2017/03/18/090332>
 
-1. Accounting For Technical Noise In Single-Cell RNA Sequencing Analysis \\
+* Accounting For Technical Noise In Single-Cell RNA Sequencing Analysis \\
   <http://biorxiv.org/content/early/2017/03/17/116939>
 
-1. Classification of RNA-Seq Data via Gaussian Copulas \\
+* Classification of RNA-Seq Data via Gaussian Copulas \\
   <http://biorxiv.org/content/early/2017/03/17/116046>
 
-1. MEACA: efficient gene-set interpretation of expression data using mixed models \\
+* MEACA: efficient gene-set interpretation of expression data using mixed models \\
   <http://biorxiv.org/content/early/2017/03/16/106781>
 
-1. Using Single Nucleotide Variations in Single-Cell RNA-Seq to Identify Tumor Subpopulations and Genotype-phenotype Linkage \\
+* Using Single Nucleotide Variations in Single-Cell RNA-Seq to Identify Tumor Subpopulations and Genotype-phenotype Linkage \\
   <http://biorxiv.org/content/early/2017/03/01/095810>
 
-1. Visualization and analysis of single-cell RNA-seq data by kernel-based similarity learning \\
+* Visualization and analysis of single-cell RNA-seq data by kernel-based similarity learning \\
   <http://biorxiv.org/content/early/2017/02/28/052225>
 
-1. Enabling cross-study analysis of RNA-Sequencing data \\
+* Enabling cross-study analysis of RNA-Sequencing data \\
   <http://biorxiv.org/content/early/2017/02/27/110734>
 
-1. MAGIC: A diffusion-based imputation method reveals gene-gene interactions in single-cell RNA-sequencing data \\
+* MAGIC: A diffusion-based imputation method reveals gene-gene interactions in single-cell RNA-sequencing data \\
   <http://biorxiv.org/content/early/2017/02/25/111591>
 
-1. A general and powerful stage-wise testing procedure for differential expression and differential transcript usage \\
+* A general and powerful stage-wise testing procedure for differential expression and differential transcript usage \\
   <http://biorxiv.org/content/early/2017/02/16/109082>
 
-1. scRNASeqDB: a database for gene expression profiling in human single cell by RNA-seq \\
+* scRNASeqDB: a database for gene expression profiling in human single cell by RNA-seq \\
   <http://biorxiv.org/content/early/2017/01/31/104810>
 
-1. Comparison of Principal Component Analysis and t-Stochastic Neighbor Embedding with Distance Metric Modifications for Single-cell RNA-sequencing Data Analysis \\
+* Comparison of Principal Component Analysis and t-Stochastic Neighbor Embedding with Distance Metric Modifications for Single-cell RNA-sequencing Data Analysis \\
   <http://biorxiv.org/content/early/2017/01/29/102780>
 
-1. CIDR: Ultrafast and accurate clustering through imputation for single-cell RNA-Seq data \\
+* CIDR: Ultrafast and accurate clustering through imputation for single-cell RNA-Seq data \\
   <http://biorxiv.org/content/early/2017/01/26/068775>
 
-1. aRNApipe: A balanced, efficient and distributed pipeline for processing RNA-seq data in high performance computing environments \\
+* aRNApipe: A balanced, efficient and distributed pipeline for processing RNA-seq data in high performance computing environments \\
   <http://biorxiv.org/content/early/2017/01/20/060277>
 
-1. Snaptron: querying and visualizing splicing across tens of thousands of RNA-seq samples \\
+* Snaptron: querying and visualizing splicing across tens of thousands of RNA-seq samples \\
   <http://biorxiv.org/content/early/2017/01/09/097881>
 
-1. Software solutions for reproducible RNA-seq workflows \\
+* Software solutions for reproducible RNA-seq workflows \\
   <http://biorxiv.org/content/early/2017/01/06/099028>
 
-1. Building containerized workflows for RNA-seq data using the BioDepot-workflow-Builder (BwB) \\
+* Building containerized workflows for RNA-seq data using the BioDepot-workflow-Builder (BwB) \\
   <http://biorxiv.org/content/early/2017/01/06/099010>
 
 
