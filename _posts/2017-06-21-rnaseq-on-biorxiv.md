@@ -9,10 +9,10 @@ draft: true
 # Single cell RNA-seq papers on biorxiv, Jan&ndash;Jun 2017
 
 * A robust statistical framework to detect multiple sources of hidden variation in single-cell transcriptomes  
- <http://biorxiv.org/content/early/2017/06/18/151217>
+   <http://biorxiv.org/content/early/2017/06/18/151217>
 
 * Biological classification with RNA-Seq data: Can alternative splicing enhance machine learning classifier?  
-<http://biorxiv.org/content/early/2017/06/18/146340>
+  <http://biorxiv.org/content/early/2017/06/18/146340>
 
 Addressing the looming identity crisis in single cell RNA-seq
 http://biorxiv.org/content/early/2017/06/16/150524
