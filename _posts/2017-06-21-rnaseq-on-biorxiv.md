@@ -8,7 +8,9 @@ draft: true
 
 # Single cell RNA-seq papers on biorxiv, Jan&ndash;Jun 2017
 
-I looked through all 2017 preprints in <http://biorxiv.org/collection/bioinformatics>, that's 60 pages with 10 papers per page, i.e. around 600 papers in half a year. In comparison, <arxiv.org> has only around 60 papers in 2017 in q-bio.GN (it does not separate bioinformatics and genomices; biorxiv has further around 400 papers in genomics section). Below is the list of all papers related to the analysis of scRNA-seq data. I plan to provide short comments on some of them later, or perhaps group them by topics.
+I looked through all 2017 preprints in <http://biorxiv.org/collection/bioinformatics>, that's 60 pages with 10 papers per page, i.e. around 600 papers in half a year. In comparison, <http://arxiv.org> has only around 60 papers in 2017 in q-bio.GN (it does not separate bioinformatics and genomices; biorxiv has further around 400 papers in its genomics section).
+
+Below is the list of all papers related to the analysis of scRNA-seq data. I plan to provide short comments on some of them later, or perhaps group them by topics.
 
 * A robust statistical framework to detect multiple sources of hidden variation in single-cell transcriptomes \\
   <http://biorxiv.org/content/early/2017/06/18/151217>
