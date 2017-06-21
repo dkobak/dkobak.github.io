@@ -10,10 +10,10 @@ draft: true
 
 http://biorxiv.org/collection/bioinformatics 60 pages * 10
 
-* A robust statistical framework to detect multiple sources of hidden variation in single-cell transcriptomes  
+* A robust statistical framework to detect multiple sources of hidden variation in single-cell transcriptomes \\
   <http://biorxiv.org/content/early/2017/06/18/151217>
 
-* Biological classification with RNA-Seq data: Can alternative splicing enhance machine learning classifier?  
+* Biological classification with RNA-Seq data: Can alternative splicing enhance machine learning classifier?<br>
   <http://biorxiv.org/content/early/2017/06/18/146340>
 
 * Addressing the looming identity crisis in single cell RNA-seq    
