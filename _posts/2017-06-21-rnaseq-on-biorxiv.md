@@ -3,14 +3,13 @@ layout: post
 date:   2017-06-21 09:00:00
 title:  "Single cell RNA-seq on biorxiv, Jan-Jun 2017"
 excerpt_separator: <!--break-->
-draft: true
 ---
 
 # Single cell RNA-seq papers on biorxiv, Jan&ndash;Jun 2017
 
 I looked through all 2017 preprints in <http://biorxiv.org/collection/bioinformatics>, that's 60 pages with 10 papers per page, i.e. around 600 papers in half a year. In comparison, <http://arxiv.org> has only around 60 papers in 2017 in q-bio.GN (it does not separate bioinformatics and genomices; biorxiv has further around 400 papers in its genomics section).
 
-Below is the list of all papers related to the analysis of scRNA-seq data. I plan to provide short comments on some of them later, or perhaps group them by topics.
+Below is the list of all papers related to the analysis of scRNA-seq data. I plan to provide short comments on some of them later, or perhaps group them by topics. (The list will get updated until the end of June.)
 
 <!--break-->
 
