@@ -1,4 +1,5 @@
 {% for post in site.posts %}
+{% unless post.draft %}
 {{ post.excerpt }}
 
 {% if post.excerpt != post.content %}
@@ -6,4 +7,5 @@
 {% endif %}
   
 <hr>
+{% endunless}
 {% endfor %}
