@@ -58,11 +58,12 @@ In the Darmanis dataset CIDR performs somewhat better than PCA, and again we see
 ```r
 y_tsne2 <- tsne(dist(t(brain10_lcpm)), k=nPCs, perplexity=10)
 ```
-should be
+which instead should be something like
+
 ```r
-y_tsne2 <- tsne(prcomp(t(brain10_lcpm))$x[,c(1:nPCs)], perplexity=10)
+y_tsne2 <- tsne(prcomp(t(brain10_lcpm))$x[,c(1:30)], perplexity=10)
 ```
-(and would work even better when using `nPCs=10` instead of `nPCs=4`). Parameter `k` with default value `k=2` controls the output dimensionality, not the PCA preprocessing dimensionality. 
+where the number of PCs can be any reasonable number (e.g. 10 or 50; `tsne` package does not handle its own default value `initial_dims=30` correctly, see [this issue on github](https://github.com/jdonaldson/rtsne/issues/5)). Parameter `k` with default value `k=2` controls the output dimensionality, not the PCA preprocessing dimensionality. The value of `nPCs` is equal to `4`, so the authors use t-SNE to map the data to four dimensions and then show only two of them, which does not make any sense because t-SNE does not order dimensions by importance. To obtain a two-dimensional visualization, one has to use `k=2`. (I am using `prcomp` explicitly because `tsne` package does not work properly.
 
 ![Darmanis dataset](/img/cidr/darmanis.png)
 
