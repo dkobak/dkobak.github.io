@@ -1,7 +1,7 @@
 {% for post in site.posts %}
 {% unless post.draft %}
 
-<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+<h2>{{ post.title }}</h2>
 <p style="color:grey; margin-top:-1em; font-weight:bold">{{ post.date | date_to_long_string }}</p>
 
 {{ post.excerpt }}
