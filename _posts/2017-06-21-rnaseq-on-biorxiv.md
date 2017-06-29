@@ -11,6 +11,9 @@ Below is the list of all papers related to the analysis of scRNA-seq data. I pla
 
 <!--break-->
 
+* Identification and visualization of differential isoform expression in RNA-seq time series \\
+  <http://www.biorxiv.org/content/early/2017/06/29/155135>
+
 * A robust statistical framework to detect multiple sources of hidden variation in single-cell transcriptomes \\
   <http://biorxiv.org/content/early/2017/06/18/151217>
 
