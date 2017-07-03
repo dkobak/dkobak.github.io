@@ -1,15 +1,21 @@
 ---
 layout: post
-date:   2017-06-21 09:00:00
+date:   2017-06-30 09:00:00
 title:  "Single cell RNA-seq papers on biorxiv, Jan-Jun 2017"
 excerpt_separator: <!--break-->
 ---
 
 I scrolled through all the ~600 preprints in <http://biorxiv.org/collection/bioinformatics> starting from Janury 2017, looking for papers on single cell RNA-seq data analysis. As an aside, I did not realize that biorxiv got so big in this community. In comparison, <http://arxiv.org> has only around 60 papers in 2017 in q-bio.GN, and it does not separate bioinformatics and genomics. Biorxiv has further around 400 papers in its genomics section, so is around $$1000/60 \approx 15$$ times more popular.
 
-Below is the list of all papers related to the analysis of scRNA-seq data. I plan to provide short comments on some of them later, or perhaps group them by topics. (This list will get updated until the end of June.)
+Below is the list of all papers related to the analysis of scRNA-seq data. I might provide short comments on some of them later, or perhaps group them by topics. For now the list is posted as is.
 
 <!--break-->
+
+* zingeR: unlocking RNA-seq tools for zero-inflation and single cell applications
+  <http://www.biorxiv.org/content/early/2017/06/30/157982>
+
+* A benchmarking of workflows for detecting differential splicing and differential expression at isoform level in human RNA-seq studies \\
+  <http://www.biorxiv.org/content/early/2017/06/30/156752>
 
 * Identification and visualization of differential isoform expression in RNA-seq time series \\
   <http://www.biorxiv.org/content/early/2017/06/29/155135>
