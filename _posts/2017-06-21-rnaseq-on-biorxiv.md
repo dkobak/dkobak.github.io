@@ -11,7 +11,7 @@ Below is the list of all papers related to the analysis of scRNA-seq data. I mig
 
 <!--break-->
 
-* zingeR: unlocking RNA-seq tools for zero-inflation and single cell applications
+* zingeR: unlocking RNA-seq tools for zero-inflation and single cell applications \\
   <http://www.biorxiv.org/content/early/2017/06/30/157982>
 
 * A benchmarking of workflows for detecting differential splicing and differential expression at isoform level in human RNA-seq studies \\
