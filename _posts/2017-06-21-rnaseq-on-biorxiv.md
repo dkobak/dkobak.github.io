@@ -127,5 +127,31 @@ Below is the list of all papers related to the analysis of scRNA-seq data. I mig
 
 * Building containerized workflows for RNA-seq data using the BioDepot-workflow-Builder (BwB) \\
   <http://biorxiv.org/content/early/2017/01/06/099010>
+  
+  
+Some additional papers from *Genomics* section:
+
+* Missing Data and Technical Variability in Single-Cell RNA-Sequencing Experiments \\
+  <http://www.biorxiv.org/content/early/2017/05/08/025528>
+  
+* Classifying Drosophila Olfactory Projection Neuron Subtypes by Single-cell RNA Sequencing \\
+  <http://www.biorxiv.org/content/early/2017/06/03/145045>
+  
+* Single-Cell RNA-Seq Of Rheumatoid Arthritis Synovial Tissue Using Low Cost Microfluidic Instrumentation \\ 
+  <http://www.biorxiv.org/content/early/2017/05/22/140848> \\
+  Re clustering method (related to Shekhar et al) see also: \\
+  <http://www.nature.com/nmeth/journal/v14/n4/abs/nmeth.4179.html> \\
+  <http://science.sciencemag.org/content/356/6335/eaah4573>
+  
+* Differential Expression Analysis for RNAseq using Poisson Mixed Models \\
+  <http://www.biorxiv.org/content/early/2017/03/14/073403>
+  
+* Single-cell transcriptomics of malaria parasites \\
+  <http://www.biorxiv.org/content/early/2017/02/10/105015>
+  
+And from *Neuroscience* section:
+
+* Transcriptomic Correlates Of Neuron Electrophysiological Diversity \\
+  <http://www.biorxiv.org/content/early/2017/05/05/134791>
 
 
