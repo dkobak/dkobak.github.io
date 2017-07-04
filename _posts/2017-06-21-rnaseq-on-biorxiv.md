@@ -138,16 +138,16 @@ Some additional papers from *Genomics* section:
   <http://www.biorxiv.org/content/early/2017/06/03/145045>
   
 * Single-Cell RNA-Seq Of Rheumatoid Arthritis Synovial Tissue Using Low Cost Microfluidic Instrumentation \\ 
-  <http://www.biorxiv.org/content/early/2017/05/22/140848> \\
+  <http://www.biorxiv.org/content/early/2017/05/22/140848>
   
-  Satija lab. Drop-seq. t-SNE. Clustering method references: \\
+  > Satija lab. Drop-seq. t-SNE. Clustering method references:
    
-  Seq-Well: portable, low-cost RNA sequencing of single cells at high throughput (Nat Meth 2017) \\
+  > Seq-Well: portable, low-cost RNA sequencing of single cells at high throughput (Nat Meth 2017) \\
   <http://www.nature.com/nmeth/journal/v14/n4/abs/nmeth.4179.html> \\
   Single-cell RNA-seq reveals new types of human blood dendritic cells, monocytes, and progenitors (Science 2017) \\
   <http://science.sciencemag.org/content/356/6335/eaah4573>
 
-  Both these papers: Similar to Macosko (Cell 2015); but Macosko used density clustering on t-SNE plot. KNN -> SNN -> local moving based on Louvain. For comparison, Shekhar (Cell 2016) used what they call "Louvain-Jaccard". Refs:
+  > Both these papers: Similar to Macosko (Cell 2015); but Macosko used density clustering on t-SNE plot. KNN -> SNN -> local moving based on Louvain. For comparison, Shekhar (Cell 2016) used what they call "Louvain-Jaccard". Refs:
       
   Data-Driven Phenotypic Dissection of AML Reveals Progenitor-like Cells that Correlate with Prognosis (Cell 2015) \\
   <http://www.sciencedirect.com/science/article/pii/S0092867415006376>  \\
