@@ -11,4 +11,4 @@ Schematic of the day:
 
 $$\mathcal L = \lVert \mathbf Y - \mathbf X \mathbf W \mathbf V^\top\rVert^2 + \lambda_1 \sum_{i=1}^p\lVert \mathbf W_{i\cdot}\rVert_2 + \lambda_2 \lVert \mathbf W \rVert^2 \;\;\;\text{s.t.}\; \mathbf V^\top\mathbf V = \mathbf I.$$
 
-See our preprint *Sparse reduced-rank regression for exploratory visualization of single cell patch-seq recordings* (<https://www.biorxiv.org/content/early/2018/04/16/302208>) for details. 
+See our preprint *[Sparse reduced-rank regression for exploratory visualization of single cell patch-seq recordings](https://www.biorxiv.org/content/early/2018/04/16/302208)* for details. 
