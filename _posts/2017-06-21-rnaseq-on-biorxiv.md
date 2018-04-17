@@ -3,6 +3,7 @@ layout: post
 date:   2017-06-30 09:00:00
 title:  "Single cell RNA-seq papers on biorxiv, Jan-Jun 2017"
 excerpt_separator: <!--break-->
+draft: yes
 ---
 
 I scrolled through all the ~600 preprints in <http://biorxiv.org/collection/bioinformatics> starting from Janury 2017, looking for papers on single cell RNA-seq data analysis. As an aside, I did not realize that biorxiv got so big in this community. In comparison, <http://arxiv.org> has only around 60 papers in 2017 in q-bio.GN, and it does not separate bioinformatics and genomics. Biorxiv has further around 400 papers in its genomics section, so is around $$1000/60 \approx 15$$ times more popular.
