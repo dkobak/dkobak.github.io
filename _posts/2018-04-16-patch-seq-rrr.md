@@ -1,6 +1,6 @@
 ---
 layout: post
-date:   2018-04-17 12:00:00
+date:   2018-04-16 12:00:00
 title:  "Sparse reduced-rank regression for patch-seq"
 excerpt_separator: <!--break-->
 ---
