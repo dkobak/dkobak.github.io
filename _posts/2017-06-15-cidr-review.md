@@ -3,6 +3,7 @@ layout: post
 date:   2017-06-15 09:00:00
 title:  "Critical review of the CIDR paper"
 excerpt_separator: <!--break-->
+draft: yes
 ---
 
 _Genome Biology_ published [CIDR: Ultrafast and accurate clustering through imputation for single-cell RNA-seq data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1188-0) by Li et al. I am very interested in clustering and imputation of the scRNA-seq data, so I decided to take a look. 
