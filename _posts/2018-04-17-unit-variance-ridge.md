@@ -9,4 +9,4 @@ Schematic of the day:
 
 ![Unit-variance ridge regression](/img/constrainedRidge.png)
 
-See https://stats.stackexchange.com/questions/340099 for details. 
+See <https://stats.stackexchange.com/questions/340099> for details. 
