@@ -2,6 +2,7 @@
 layout: post
 date:   2018-04-25 12:00:00
 title:  "Putin's peaks"
+excerpt_separator: <!--break-->
 ---
 
 Figure of the day:
