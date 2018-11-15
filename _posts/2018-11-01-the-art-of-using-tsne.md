@@ -1,6 +1,6 @@
 ---
 layout: post
-date:   2018-04-25 12:00:00
+date:   2018-11-01 12:00:00
 title:  "The art of using t-SNE for single-cell transcriptomics"
 excerpt_separator: <!--break-->
 ---
