@@ -5,8 +5,6 @@ title:  "Unit-variance ridge regression"
 excerpt_separator: <!--break-->
 ---
 
-Schematic of the day:
-
 ![Unit-variance ridge regression](/img/constrainedRidge.png)
 
 $$\mathcal L =  \|\mathbf y - \mathbf X \boldsymbol \beta\|^2+\lambda\|\boldsymbol\beta\|^2 \:\:\text{s.t.}\:\: \|\mathbf X \boldsymbol\beta\|^2=1.$$
